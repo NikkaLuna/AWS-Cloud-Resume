@@ -1,12 +1,30 @@
-name: Upload Website
+name: Backend CI/CD
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
 
 jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt 
+      - name: Run Python tests
+        run: pytest  
+
+      # Add more steps for packaging and deploying the application if tests pass
+
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -24,5 +42,3 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'us-east-2'
           SOURCE_DIR: 'public_html'
-
-
