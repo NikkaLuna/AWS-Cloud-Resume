@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  VisitorCountFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: func.handler
+      Runtime: python3.8
+      CodeUri: ./lambda/
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref VisitorCountTable  # Reference the DynamoDB table
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref VisitorCountTable  # Reference the DynamoDB table
+
+  VisitorCountTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: VisitorCount
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
