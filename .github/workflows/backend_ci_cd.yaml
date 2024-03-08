@@ -11,17 +11,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          node-version: '20'
-      
+        uses: actions/checkout@v3  # Use actions/checkout@v3 for Node.js 20 compatibility
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4  # Use actions/setup-python@v4 for Node.js 20 compatibility
         with:
           python-version: 3.8
-          node-version: '20' 
-    
 
       - name: Install dependencies
         run: |
@@ -31,14 +26,12 @@ jobs:
       - name: Run Python tests
         run: pytest
 
-   
   deploy:
     runs-on: ubuntu-latest
-    needs: build-and-test  
+    needs: build-and-test
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-      
+        uses: actions/checkout@v3  # Use actions/checkout@v3 again for consistency
 
       - name: Upload to S3
         uses: jakejarvis/s3-sync-action@master
