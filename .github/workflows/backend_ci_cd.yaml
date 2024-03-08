@@ -1,42 +1,28 @@
-name: CI/CD - Build and Deploy SAM application
+name: Deploy Backend
 
 on:
   push:
     branches:
-      - main  
+      - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Setup AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
         with:
-          python-version: 3.8
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: 'us-east-2'
 
-      - name: Install dependencies
+      - name: Build and deploy backend
         run: |
-          pip install -r requirements.txt
-          pip install awscli 
-
-      - name: Run Python tests
-        run: pytest
-
-      - name: Build SAM application
-        run: sam build
-
-      - name: Deploy to AWS (if tests pass)
-        if: success()
-        run: |
-          aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws configure set region us-east-1  # Update with your region
-          sam deploy --stack-name BackEndStack --capabilities CAPABILITY_IAM
-
-env:
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          sam build
+          sam deploy --stack-name my-backend-stack \
+                     --s3-bucket my-sam-artifacts-bucket-cloud-resume-challenge \
+                     --capabilities CAPABILITY_IAM
