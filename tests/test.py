@@ -4,6 +4,7 @@ from lambda_function import lambda_handler
 
 class TestLambdaHandler:
 
+    @pytest.mark.test 
     def test_lambda_handler_success(self):
         # Mock DynamoDB resource and table
         mock_table = Mock()
@@ -22,6 +23,7 @@ class TestLambdaHandler:
         assert response['body'] == '{"views": 6}'
         mock_table.put_item.assert_called_once_with(Item={'id': '0', 'views': 6})
 
+    @pytest.mark.test 
     def test_lambda_handler_exception(self):
         # Mock DynamoDB resource and table
         mock_table = Mock()
