@@ -14,7 +14,6 @@ Contributions to the Cloud Resume Project are welcome! If you have suggestions f
 
 ## Resources
 - [Official Website](https://cloudresumechallenge.dev/): Visit the official Cloud Resume Project website for detailed instructions, resources, and community support.
-- [GitHub Repository](https://github.com/CloudResumeChallenge/cloud-resume-challenge): Access the project's GitHub repository to explore the code, documentation, and contributions.
 
 ## License
 The Cloud Resume Project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the project for personal or commercial purposes.
