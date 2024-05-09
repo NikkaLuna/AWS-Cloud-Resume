@@ -3,6 +3,11 @@
 ## Overview
 The Cloud Resume Project is an initiative aimed at helping individuals build and showcase their skills in cloud computing, particularly using Amazon Web Services (AWS). It provides a structured approach for creating a resume website hosted on AWS and offers guidance on various AWS services and best practices.
 
+<div style="text-align: center;">
+  <img src="https://github.com/NikkaLuna/Cloud_Resume_Challenge/assets/94496219/44a71bac-104a-428e-9327-ceaccfa8c9f7 alt="image">
+</div>
+
+
 ## Features
 - Resume Website: Build a professional resume website using HTML, CSS, and JavaScript.
 - AWS Integration: Host the website on AWS using services like Amazon S3, CloudFront, and Route 53.
