@@ -1,7 +1,7 @@
 # Cloud Resume Project
 
 ## Overview
-The Cloud Resume Project is an initiative aimed at helping individuals build and showcase their skills in cloud computing, particularly using Amazon Web Services (AWS). It provides a structured approach for creating a resume website hosted on AWS and offers guidance on various AWS services and best practices.
+The Cloud Resume Project was an initiative I undertook to build and showcase my skills in cloud computing, particularly using Amazon Web Services (AWS). It provided a structured approach for creating a resume website hosted on AWS and offered me the opportunity to learn and implement various AWS services and best practices.
 
 <div style="text-align: center;">
   <img src="https://github.com/NikkaLuna/Cloud_Resume_Challenge/assets/94496219/44a71bac-104a-428e-9327-ceaccfa8c9f7 alt="image">
@@ -9,10 +9,11 @@ The Cloud Resume Project is an initiative aimed at helping individuals build and
 
 
 ## Features
-- Resume Website: Build a professional resume website using HTML, CSS, and JavaScript.
-- AWS Integration: Host the website on AWS using services like Amazon S3, CloudFront, and Route 53.
-- Infrastructure as Code (IaC): Define and provision AWS resources using Infrastructure as Code tools like AWS CloudFormation or AWS CDK.
-- Continuous Deployment: Implement continuous deployment pipelines using AWS CodePipeline and AWS CodeBuild to automate the deployment process.
+- **Resume Website**: I built a professional resume website using HTML, CSS, and JavaScript.
+- **AWS Integration**: I hosted the website on AWS using services such as Amazon S3, CloudFront, and Route 53.
+- **Infrastructure as Code (IaC)**: I defined and provisioned AWS resources using Infrastructure as Code tools like AWS CDK.
+- **Continuous Deployment**: I implemented continuous deployment pipelines using Terraform to automate the deployment process.
+
 
 ## Contributions
 Contributions to the Cloud Resume Project are welcome! If you have suggestions for improvements, bug fixes, or new features, feel free to submit pull requests. Please ensure that your contributions align with the project's goals and guidelines.
