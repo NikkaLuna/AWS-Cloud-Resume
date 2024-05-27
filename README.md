@@ -31,7 +31,7 @@ The Cloud Resume Project is licensed under the [MIT License](LICENSE). Feel free
 
 
 ## 🚀 About Me
-I'm a Software Engineer with an emphasis on Java, SQL, and AWS.  
+I'm a Software Engineer with an emphasis on Java, Python, SQL, and AWS.  
 
 
 ## 🔗 Links
