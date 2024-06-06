@@ -1,7 +1,12 @@
 # Cloud Resume Challenge
 
 ## Overview
-The Cloud Resume Project was an initiative I undertook to build and showcase my skills in cloud computing, particularly using Amazon Web Services (AWS). It provided a structured approach for creating a resume website hosted on AWS and offered me the opportunity to learn and implement various AWS services and best practices.
+The Cloud Resume Project was an initiative I undertook to build and showcase my skills in cloud computing, particularly using Amazon Web Services (AWS). 
+
+It provided a structured approach for creating a resume website hosted on AWS and offered me the opportunity to learn and implement various AWS services and best practices.
+
+Please view the final product here: [Cloud Resume Project](https://andreahayes-cloudresumechallenge.com)
+
 
 <div style="text-align: center;">
   <img src="https://github.com/NikkaLuna/Cloud_Resume_Challenge/assets/94496219/44a71bac-104a-428e-9327-ceaccfa8c9f7 alt="image">
