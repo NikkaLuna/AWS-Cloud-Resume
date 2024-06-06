@@ -25,7 +25,7 @@ Please view the final product here: [Cloud Resume Project](https://andreahayes-c
 
 ## AWS Lambda Function Management
 
-![AWS Lambda Function](https://github.com/NikkaLuna/Cloud_Resume_Challenge/blob/main/Lambda3.mp4)
+![AWS Lambda Function](https://github.com/NikkaLuna/Cloud_Resume_Challenge/blob/main/Lambda1.png))
 
 *This screenshot shows the AWS Lambda function `VisitorCountFunction` used in the Cloud Resume Project. The function is integrated with an API Gateway and is responsible for managing visitor counts. The code editor displays the Python script that handles the logic for incrementing the visitor count in a DynamoDB table named `VisitorCount`. This setup demonstrates the use of AWS Lambda for serverless computing and real-time data processing.*
 
