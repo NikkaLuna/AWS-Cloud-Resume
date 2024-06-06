@@ -8,16 +8,19 @@ It provided a structured approach for creating a resume website hosted on AWS an
 Please view the final product here: [Cloud Resume Project](https://andreahayes-cloudresumechallenge.com)
 
 
-<div style="text-align: center;">
-  <img src="https://github.com/NikkaLuna/Cloud_Resume_Challenge/assets/94496219/44a71bac-104a-428e-9327-ceaccfa8c9f7 alt="image">
-</div>
+## Features
+
+- **Resume Website**: Built a professional resume website using HTML, CSS, and JavaScript.
+- **AWS Integration**: Hosted the website on AWS using Amazon S3 for static content hosting, CloudFront for content delivery, and Route 53 for DNS management.
+- **Infrastructure as Code (IaC)**: Defined and provisioned the required AWS resources, including the S3 bucket, CloudFront distribution, and Route 53 hosted zone, using Terraform as the Infrastructure as Code (IaC) tool.
+- **Continuous Deployment**: Implemented continuous deployment pipelines using Terraform to automate the deployment process.
 
 
-### Features
-- **Resume Website:** Built a professional resume website using HTML, CSS, and JavaScript.
-- **AWS Integration:** Hosted the website on AWS using Amazon S3 for static content hosting, CloudFront for content delivery, and Route 53 for DNS management.
-- **Infrastructure as Code (IaC):** Defined and provisioned the required AWS resources, including the S3 bucket, CloudFront distribution, and Route 53 hosted zone, using Terraform as the Infrastructure as Code (IaC) tool.
-- **Continuous Deployment:** Implemented continuous deployment pipelines using Terraform to automate the deployment process.
+## AWS S3 Bucket Management
+
+![AWS S3 Bucket](https://github.com/NikkaLuna/Cloud_Resume_Challenge/blob/main/S3.png)
+
+*This screenshot shows the AWS S3 bucket management interface for the Cloud Resume Project. It illustrates the organization and structure of the S3 bucket used to host the resume website, including folders for contact, CSS, image assets, and the main `index.html` file. This setup demonstrates the use of AWS S3 for static content hosting.*
 
 
 
