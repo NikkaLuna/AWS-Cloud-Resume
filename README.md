@@ -22,6 +22,12 @@ Please view the final product here: [Cloud Resume Project](https://andreahayes-c
 
 *This screenshot shows the AWS S3 bucket management interface for the Cloud Resume Project. It illustrates the organization and structure of the S3 bucket used to host the resume website, including folders for contact, CSS, image assets, and the main `index.html` file. This setup demonstrates the use of AWS S3 for static content hosting.*
 
+## AWS DynamoDB Management
+
+![AWS DynamoDB](https://github.com/NikkaLuna/Cloud_Resume_Challenge/blob/main/DynamoDB.png)
+
+*This screenshot shows the AWS DynamoDB interface for the VisitorCount table used in the Cloud Resume Project. It illustrates how visitor counts are stored and queried, showcasing the use of DynamoDB for real-time data storage and retrieval.*
+
 
 
 ## Contributions
