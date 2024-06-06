@@ -8,11 +8,12 @@ The Cloud Resume Project was an initiative I undertook to build and showcase my 
 </div>
 
 
-## Features
-- **Resume Website**: I built a professional resume website using HTML, CSS, and JavaScript.
-- **AWS Integration**: I hosted the website on AWS using services such as Amazon S3, CloudFront, and Route 53.
-- **Infrastructure as Code (IaC)**: I defined and provisioned AWS resources using Infrastructure as Code tools like AWS CDK.
-- **Continuous Deployment**: I implemented continuous deployment pipelines using Terraform to automate the deployment process.
+### Features
+- **Resume Website:** Built a professional resume website using HTML, CSS, and JavaScript.
+- **AWS Integration:** Hosted the website on AWS using Amazon S3 for static content hosting, CloudFront for content delivery, and Route 53 for DNS management.
+- **Infrastructure as Code (IaC):** Defined and provisioned the required AWS resources, including the S3 bucket, CloudFront distribution, and Route 53 hosted zone, using Terraform as the Infrastructure as Code (IaC) tool.
+- **Continuous Deployment:** Implemented continuous deployment pipelines using Terraform to automate the deployment process.
+
 
 
 ## Contributions
