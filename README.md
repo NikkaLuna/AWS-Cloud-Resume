@@ -5,7 +5,7 @@ The Cloud Resume Project was an initiative I undertook to build and showcase my 
 
 It provided a structured approach for creating a resume website hosted on AWS and offered me the opportunity to learn and implement various AWS services and best practices.
 
-Please view the final product here: [Cloud Resume Project](https://andreahayes-cloudresumechallenge.com)
+Please view the completed website here: [Cloud Resume Project](https://andreahayes-cloudresumechallenge.com)
 
 
 ## Features
