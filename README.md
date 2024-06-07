@@ -11,8 +11,11 @@ Please view the completed website here: [Cloud Resume Project](https://andreahay
 ## Features
 
 - **Resume Website**: Built a professional resume website using HTML, CSS, and JavaScript.
+  
 - **AWS Integration**: Hosted the website on AWS using Amazon S3 for static content hosting, CloudFront for content delivery, and Route 53 for DNS management.
+  
 - **Infrastructure as Code (IaC)**: Defined and provisioned the required AWS resources, including the S3 bucket, CloudFront distribution, and Route 53 hosted zone, using Terraform as the Infrastructure as Code (IaC) tool.
+  
 - **Continuous Deployment**: Implemented continuous deployment pipelines using Terraform to automate the deployment process.
 
 
