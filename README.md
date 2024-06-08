@@ -54,12 +54,6 @@ Please view the completed website here: [Cloud Resume Project](https://andreahay
 ## Contributions
 Contributions to the Cloud Resume Project are welcome! If you have suggestions for improvements, bug fixes, or new features, feel free to submit pull requests. Please ensure that your contributions align with the project's goals and guidelines.
 
-## Resources
-- [Official Website](https://cloudresumechallenge.dev/): Visit the official Cloud Resume Project website for detailed instructions, resources, and community support.
-
-## License
-The Cloud Resume Project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the project for personal or commercial purposes.
-
 
 ## Authors
 
