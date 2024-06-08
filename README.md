@@ -21,7 +21,7 @@ Please view the completed website here: [Cloud Resume Project](https://andreahay
 
 - **Infrastructure as Code (IaC)**: Utilized Terraform to define and provision AWS resources, including:
   - **IAM Role and Policy**: Created an IAM role and attached policies to provide the necessary permissions for the Lambda function to interact with other AWS services.
-  - **Lambda Function**: Set up a Lambda function to handle specific tasks, including the necessary handler, runtime environment, and associated permissions.
+  - **Lambda Function**: Configured a Lambda function with the required handler, runtime environment, and permissions to handle specific tasks.
   - **Function URL**: Configured a Lambda function URL with CORS settings to allow for cross-origin requests.
   - **Deployment Package**: Used the Terraform archive provider to package the Lambda function's code for deployment.
   
