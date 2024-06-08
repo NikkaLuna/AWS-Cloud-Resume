@@ -11,12 +11,24 @@ Please view the completed website here: [Cloud Resume Project](https://andreahay
 ## Features
 
 - **Resume Website**: Built a professional resume website using HTML, CSS, and JavaScript.
+
+- **AWS Integration**: 
+  - **Amazon S3**: Hosted the static content of the website on Amazon S3, ensuring high availability and durability. S3 is used for storing HTML, CSS, JavaScript, and media files securely and efficiently.
+  - **CloudFront**: Implemented Amazon CloudFront as a content delivery network (CDN) to distribute the website globally with low latency and high transfer speeds. CloudFront caches the content at edge locations around the world, improving the loading times for visitors.
+  - **Route 53**: Used Amazon Route 53 for DNS management, providing reliable and cost-effective routing of end users to the website. Route 53 ensures that the website is accessible via a custom domain name, with capabilities for handling traffic and failover routing to enhance reliability.
+
+## Deployment Automation
+
+- **Infrastructure as Code (IaC)**: Utilized Terraform to define and provision AWS resources, including:
+  - **IAM Role and Policy**: Created an IAM role and attached policies to provide the necessary permissions for the Lambda function to interact with AWS services such as DynamoDB and CloudWatch Logs.
+  - **Lambda Function**: Set up a Lambda function to handle specific tasks, including the necessary handler, runtime environment, and associated permissions.
+  - **Function URL**: Configured a Lambda function URL with CORS settings to allow for cross-origin requests.
+  - **Deployment Package**: Used the Terraform archive provider to package the Lambda function's code for deployment.
   
-- **AWS Integration**: Hosted the website on AWS using Amazon S3 for static content hosting, CloudFront for content delivery, and Route 53 for DNS management.
-  
-- **Infrastructure as Code (IaC)**: Defined and provisioned the required AWS resources, including the S3 bucket, CloudFront distribution, and Route 53 hosted zone, using Terraform as the Infrastructure as Code (IaC) tool.
-  
-- **Continuous Deployment**: Implemented continuous deployment pipelines using Terraform to automate the deployment process.
+- **Continuous Deployment**: Automated website deployment to an S3 bucket using a GitHub Actions workflow. This pipeline includes:
+  - **Code Checkout**: Checks out the code from the repository using the `actions/checkout@master` action.
+  - **S3 Synchronization**: Synchronizes the contents of the `public_html` directory with an S3 bucket using the `jakejarvis/s3-sync-action@master` action. This includes setting access control to private and enabling deletion of any removed files.
+
 
 
 ## AWS S3 Bucket Management
