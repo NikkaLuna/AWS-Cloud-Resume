@@ -12,24 +12,6 @@ Please view the completed website here: [Cloud Resume Project](https://andreahay
 
 - **Resume Website**: Built a professional resume website using HTML, CSS, and JavaScript.
 
-- **AWS Integration**: 
-  - **Amazon S3**: Hosted the static content of the website on Amazon S3, ensuring high availability and durability. S3 is used for storing the HTML, CSS, JavaScript, and media files.
-  - **CloudFront**: Implemented Amazon CloudFront as a content delivery network (CDN) to distribute the website globally with low latency and high transfer speeds. 
-  - **Route 53**: Used Amazon Route 53 for DNS management, ensuring that the website is accessible via a custom domain name.
-
-## Deployment Automation
-
-- **Infrastructure as Code (IaC)**: Utilized Terraform to define and provision AWS resources, including:
-  - **IAM Role and Policy**: Created an IAM role and attached policies to provide the necessary permissions for the Lambda function to interact with other AWS services.
-  - **Lambda Function**: Configured a Lambda function with the required handler, runtime environment, and permissions to handle specific tasks.
-  - **Function URL**: Configured a Lambda function URL with CORS settings to allow for cross-origin requests.
-  - **Deployment Package**: Used the Terraform archive provider to package the Lambda function's code for deployment.
-  
-- **Continuous Deployment**: Automated website deployment to an S3 bucket using a GitHub Actions workflow. This pipeline includes:
-  - **Code Checkout**: Checks out the code from the repository using the `actions/checkout@master` action.
-  - **S3 Synchronization**: Synchronizes the contents of the `public_html` directory with an S3 bucket using the `jakejarvis/s3-sync-action@master` action. This includes setting access control to private and enabling deletion of any removed files.
-
-
 
 ## AWS S3 Bucket Management
 
@@ -49,6 +31,26 @@ Please view the completed website here: [Cloud Resume Project](https://andreahay
 ![AWS Lambda Function](https://github.com/NikkaLuna/Cloud_Resume_Challenge/blob/main/Lambda1.png)
 
 *This screenshot displays the AWS Lambda function VisitorCountFunction, which is integrated with an API Gateway to manage visitor counts. The Python script in the code editor handles the logic for incrementing the count in the VisitorCount DynamoDB table. This setup showcases AWS Lambda for serverless computing and real-time data processing.*
+
+
+
+## AWS Integration
+
+  - **Amazon S3**: Hosted the static content of the website on Amazon S3, ensuring high availability and durability. S3 is used for storing the HTML, CSS, JavaScript, and media files.
+  - **CloudFront**: Implemented Amazon CloudFront as a content delivery network (CDN) to distribute the website globally with low latency and high transfer speeds. 
+  - **Route 53**: Used Amazon Route 53 for DNS management, ensuring that the website is accessible via a custom domain name.
+
+## Deployment Automation
+
+- **Infrastructure as Code (IaC)**: Utilized Terraform to define and provision AWS resources, including:
+  - **IAM Role and Policy**: Created an IAM role and attached policies to provide the necessary permissions for the Lambda function to interact with other AWS services.
+  - **Lambda Function**: Configured a Lambda function with the required handler, runtime environment, and permissions to handle specific tasks.
+  - **Function URL**: Configured a Lambda function URL with CORS settings to allow for cross-origin requests.
+  - **Deployment Package**: Used the Terraform archive provider to package the Lambda function's code for deployment.
+  
+- **Continuous Deployment**: Automated website deployment to an S3 bucket using a GitHub Actions workflow. This pipeline includes:
+  - **Code Checkout**: Checks out the code from the repository using the `actions/checkout@master` action.
+  - **S3 Synchronization**: Synchronizes the contents of the `public_html` directory with an S3 bucket using the `jakejarvis/s3-sync-action@master` action. This includes setting access control to private and enabling deletion of any removed files.
 
 
 ## Contributions
